@@ -114,7 +114,7 @@ function build_user_panels(data) {
 
 			//  ------------ Delete Marble ------------ //
 			if ($(event.target).attr('id') === 'trashbin') {
-				console.log('removing marble', marble_id);
+				console.log('[vg] : removing marble', marble_id);
 				show_tx_step({ state: 'building_proposal' }, function () {
 					var obj = {
 						type: 'delete_marble',
